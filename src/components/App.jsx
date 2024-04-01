@@ -1,17 +1,26 @@
+
+import Profile from "../components/profile";
+import user from "../json/user.json";
+
+import Statistics from "../components/statistics";
+import data from "../json/data.json";
+
+import FriendList from "../components/friendList";
+import friends from "../json/friends.json";
+
+import TransactionHistory from "../components/transactionHistory";
+import history from "../json/transactions.json";
+
 export const App = () => {
+ 
+  console.log(friends);
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-        backgroundColor: '#f5f5f5',
-      }}
-    >
-      React homework template
-    </div>
+    <>
+    <Profile user={user} />
+    <Statistics title="Upload stats" data={data} />
+    <FriendList friends={friends}/>
+    <TransactionHistory history={history}/>
+    </>
   );
+  
 };

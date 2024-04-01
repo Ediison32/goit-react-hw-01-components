@@ -1,0 +1,43 @@
+
+.static{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: gainsboro;
+    width: 600px;
+    
+   
+}
+.statList {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .item {
+    display: inline-block;
+    padding: 39px;
+    color: white;
+  }
+  .item:nth-child(1) {
+    background-color: rgb(100, 243, 243);
+  }
+  
+  .item:nth-child(2) {
+    background-color: rgb(189, 131, 255);
+  }
+  
+  .item:nth-child(3) {
+    background-color: rgb(255, 152, 152);
+  }
+  .item:nth-child(4) {
+    background-color: rgb(75, 213, 255);
+  }
+  
+  .label{
+    display: block;
+  }
+  .percentage {
+    display: block;
+    font-size: 20px;
+  }
