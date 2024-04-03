@@ -1,5 +1,5 @@
 
-
+import PropTypes from "prop-types";
 import style from "../components/styles/statistics.module.css";
 
 export default function Statistics({title, data}){
@@ -58,3 +58,10 @@ export default function Statistics({title, data}){
     )
 };
 
+Statistics.propTypes = {
+    
+    title: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.string.isRequired
+}

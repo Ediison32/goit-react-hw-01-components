@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 import style from "../components/styles/friends.module.css";
 
 
@@ -19,3 +19,14 @@ export default function FriendList(friends){
         </>
     );
 }
+
+
+FriendList.propTypes = {
+    
+    id: PropTypes.number.isRequired,
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired
+}
+
+

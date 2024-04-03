@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import style from "../components/styles/transaction.module.css"
 
 export default function TransactionHistory(history){
@@ -26,4 +27,15 @@ export default function TransactionHistory(history){
             </tbody>
         </table>
     )
+}
+
+TransactionHistory.PropTypes= {
+    history: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.string.isRequired,
+          type: PropTypes.string.isRequired,
+          amount: PropTypes.number.isRequired,
+          currency: PropTypes.string.isRequired
+      })
+)
 }
